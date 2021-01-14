@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+body{
+    background-color:#E0692D;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #0F5794;
+    padding: 20px;
+}
+header h1{
+    text-align: center;
+}
+header h1 a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+/*formulario*/
+.formulario_section{
+    width: 100%;
+    height: 500px;
+}
+.formulario_section .formulario_container{
+    width: 20%;
+    height: 400px;
+    margin: 20px auto;
+    background-color: #2288E0;
+}
+.formulario_section .formulario_container h3{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    padding: 20px;
+    background-color: #0F5794;
+    color: #fff;
+}
+.formulario_section .formulario_container form{
+    width: 90%;
+    height: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.formulario_section .formulario_container form input[type="text"], .formulario_section .formulario_container form input[type="password"]{
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    color: #fff;
+}
+input::placeholder{
+    color: #fff;
+}
+.formulario_section .formulario_container form .form_sexo{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.formulario_section .formulario_container form .form_sexo label{
+    margin-left: 30px;
+    cursor: pointer;
+}
+.formulario_section .formulario_container form input[type="submit"]{
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
+    background-color: #38E075;
+    border: none;
+    margin-top: 60px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+.formulario_section .formulario_container form input[type="submit"]:hover{
+    background-color: #2C9452;
+}
+.formulario_section .formulario_container form a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin: 10px auto;
+    transition: text-decoration .5s;
+}
+.formulario_section .formulario_container form a:hover{
+    text-decoration: underline;
+}
+/*lista*/
+.lista_section{
+    width: 100%;
+    height: 600px;
+}
+.lista_section .lista_container{
+    width: 80%;
+    margin: 20px auto;
+    padding: 25px;
+    text-align: center;
+}
+.lista_section .lista_container tr{
+    height: 30px;
+}
+.lista_section .lista_container td{
+    width: 300px;    
+}
+.lista_section .lista_container .td_head{
+    background-color: #0F5794;
+    color: #fff;
+}
+.lista_section .lista_container .td_body{
+    background-color: #2288E0;
+    color: #fff;
+}
+.lista_section .lista_container .td_body td button{
+    width: 90%;
+    padding: 5px 0;
+    background-color: #38E075;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+.lista_section .lista_container .td_body td button:hover{
+    background-color: #2C9452;
+}
+/*panel*/
+.panel_section{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.452);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.message_container{
+    background-color: #fff;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+.message_container .message_text{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.message_container .message_in{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.message_container form .message_in input[type="password"]{
+    width: 80%;
+    padding: 5px;
+    border: solid #0F5794 1px;
+    color: black;
+    text-align: left;
+}
+.message_container .message_btn{
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    padding-left: 25%;
+}
+.message_container .message_btn a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: 30%;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 auto;
+    background-color: #911;
+    font-size: 15px;
+}
+.message_container .message_btn #del_btn{ 
+    display: inline-block;
+    border: none;
+    color: #fff;
+    width: 30%;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 auto; 
+    background-color: #38E075;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*mensaje error*/
+.error_message{
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #911;
+}
+.error_message p{
+    padding: 15px 30px;
+    color: #fff;
+}
+.error_message button{
+    background-color: #911;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+}
